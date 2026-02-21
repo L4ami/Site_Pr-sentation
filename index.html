@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Je suis Développeur Web</h1>
+    <p>Je crée des sites modernes pour petites entreprises</p>
+    <a href="#projects" class="btn">Voir mes projets</a>
+  </header>
+
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Passionné par le web, je développe des sites simples, modernes et efficaces. Mon objectif : aider les indépendants et artisans à avoir une présence en ligne professionnelle.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Mes projets</h2>
+    <div class="project">
+      <img src="https://via.placeholder.com/400x200" alt="Projet 1">
+      <h3>Site Vitrine Coiffeur</h3>
+      <p>Un site responsive pour un salon de coiffure local, avec prise de rendez-vous.</p>
+    </div>
+    <div class="project">
+      <img src="https://via.placeholder.com/400x200" alt="Projet 2">
+      <h3>Landing Page Coach Sportif</h3>
+      <p>Une page d’atterrissage pour vendre un programme d'entraînement personnalisé.</p>
+    </div>
+    <div class="project">
+      <img src="https://via.placeholder.com/400x200" alt="Projet 3">
+      <h3>CV en ligne</h3>
+      <p>Un CV interactif et responsive pour montrer mon parcours et mes compétences.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Mes services</h2>
+    <ul>
+      <li>✔ Création de site vitrine responsive</li>
+      <li>✔ Intégration de maquettes Figma/Adobe XD</li>
+      <li>✔ Maintenance mensuelle (mises à jour, sauvegardes)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Votre nom" required />
+      <input type="email" placeholder="Votre email" required />
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Youv - Développeur Web</p>
+  </footer>
+<script>
+  // LS -->Empêche la sélection de dates passées
+  const dateInput = document.getElementById('date');
+  const today = new Date().toISOString().split('T')[0];
+  dateInput.min = today;
+</script>
+
+</body>
+</html>
